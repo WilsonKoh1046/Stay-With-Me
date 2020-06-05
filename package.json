@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.0",
     "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-js-pagination": "^3.0.3",
@@ -15,7 +16,7 @@
     "react-slick": "^0.26.1"
   },
   "scripts": {
-    "start": "concurrently \"node ./backend/app.js\" \"react-scripts start\"",
+    "start": "concurrently \"nodemon ./backend/app.js\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
