@@ -1,0 +1,42 @@
+.forum-section {
+    border-style: dotted;
+    border-color: white;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+}
+
+.forum-section > h2 {
+    font-size: 2em;
+}
+
+.writing-section {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.pagination {
+    list-style-type: none;
+}
+
+.pagination > li {
+    display: inline-block;
+    color: white;
+    padding: 20px;
+}
+
+.pagination > li :hover {
+    background-color: gold;
+}
+
+.active > a {
+    color: black;
+}
+
+.page-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}

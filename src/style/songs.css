@@ -1,0 +1,55 @@
+.songs-section {
+    border-style: dotted;
+    border-color: white;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: hidden;
+    padding-bottom: 5%;
+    background-color: wheat;
+}
+
+.songs-section > h2 {
+    font-size: 2em;
+}
+
+.songs-section > h3 {
+    color: coral;
+}
+
+.song-lists {
+    margin: 100px;
+    text-align: left;
+}
+
+.song-card {
+    color: black;
+    border-style: solid;
+    border-color: black;
+    background-color: coral;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20% !important;
+    padding: 5mm;
+}
+
+@media only screen and (max-width: 320px) {
+    .song-card {
+        width: 100% !important;
+    }
+}
+
+.song-card > h3 {
+    color: black;
+    margin-bottom: 10%;
+}
+
+.song-card > a {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: black;
+    background-color: lightcoral;
+    padding: 2mm;
+}

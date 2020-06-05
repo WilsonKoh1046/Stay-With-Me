@@ -1,0 +1,11 @@
+.about-section {
+    margin: 50px;
+}
+
+.about-section > h2 {
+    font-size: 2em;
+}
+
+.about-section > p {
+    font-size: 1.2em;
+}
