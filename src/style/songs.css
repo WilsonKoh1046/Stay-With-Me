@@ -29,13 +29,14 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 20% !important;
+    width: 80%;
     padding: 5mm;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 768px) {
     .song-card {
-        width: 100% !important;
+        width: 20% !important;
+        padding: 5mm;
     }
 }
 

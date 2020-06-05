@@ -1,9 +1,23 @@
 import React, { Component } from 'react';
 import '../style/songs.css';
-import songs from '../songs';
 import Slider from "react-slick";
+import SongCard from './SongCard';
 
 class Songs extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            allSongs: [],
+            allYTLinks: []
+        }
+    }
+    componentDidMount() {
+        fetch("http://localhost:8080/api/songs")
+        .then(response => response.json())
+        .then(data => {
+            this.setState({allSongs: data[0].songList, allYTLinks: data[0].songYTLink});
+        })
+    }
     render() {
         const settings = {
             dots: true,
@@ -21,11 +35,8 @@ class Songs extends Component {
                 <h2 style={{color: "black"}}>Songs</h2>
                 <h3>Enjoy The Sweetness Of Miki's Beautiful Voice</h3>
                 <Slider {...settings}>
-                    {songs.songList.map((song, index) => {
-                        return (<div className="song-card">
-                            <h3>~ {song} ~</h3>
-                            <a href={songs.songYTLink[index]} rel="noopener noreferrer" target="_blank">Listen Now!</a>
-                        </div>)
+                    {this.state.allSongs.map((song, index) => {
+                        return <SongCard name={song} ytlinkIndex={index} fullSongList={this.state.allYTLinks} />
                     })}
                 </Slider>
             </div>

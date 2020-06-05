@@ -28,4 +28,6 @@ yarn-error.log*
 /public/miki-matsubara-pic4.jpg
 
 forum.json
-songs.js
+songs.json
+
+/backend/node_modules
