@@ -5,8 +5,8 @@ class SongCard extends Component {
     render() {
         return (
             <div className="song-card">
-                <h3>~ {this.props.name} ~</h3>
-                <a href={this.props.fullSongList[this.props.ytlinkIndex]} rel="noopener noreferrer" target="_blank">Listen Now!</a>
+                <h3>~ {this.props.detail.name} ~</h3>
+                <a href={this.props.detail.ytLink} rel="noopener noreferrer" target="_blank">Listen Now!</a>
             </div>
         );
     }
